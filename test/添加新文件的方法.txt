@@ -1,0 +1,3 @@
+git add 需要上传的文件    添加文件到本地库
+git commit -m “try again” 提交文件到本地库
+git push origin master 上传文件
