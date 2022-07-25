@@ -9,7 +9,7 @@ def encrypt_fun(strs):#进行SM3的hash
     return result
 n=8 #碰撞的比特数除以4
 result_list=[]
-str_1=str((hex(random.randint(0,pow(2,n*8)))))#随机生成一个初始值
+str_1=str((hex(random.randint(0,pow(2,n*4)))))#随机生成一个初始值
 flag=0
 str_1=encrypt_fun(str_1)#对初始值进行hash
 while(flag==0):#对hash一直进行hash，直到找到碰撞
