@@ -3,28 +3,28 @@ from gmssl import sm3, func
 import time
 start = time.time()
 
-def encrypt_fun(strs):
+def encrypt_fun(strs): #利用sm3对数据进行hash
     str_b = bytes(strs, encoding='utf-8')
     result = sm3.sm3_hash(func.bytes_to_list(str_b))
     return result
 collision_list=[]
-flag=0
 n=8 #n等于碰撞的比特数除以4
+flag=0
 while(flag==0):
-    message_list = []  # 随机生成的消息列表
-    result_list = []  # 利用sm3加密后的值
-    while (len(message_list) < int(1.177 * pow(2, 16))):
-        str_1 = str(random.randint(0, pow(2, 32)))
+    message_list=[]#随机生成的消息列表
+    result_list=[]#利用sm3加密后的值
+    while(len(message_list)<int(1.177*pow(2,16))):#生成消息
+        str_1 = str(random.randint(0, pow(2,32)))
         if str_1 not in message_list:
             message_list.append(str_1)
-    for str_1 in message_list:
-        result_1 = encrypt_fun(str_1)
-        if result_1[-n:] in result_list:
+    for str_1 in message_list: #遍历消息寻找碰撞
+        result_1=encrypt_fun(str_1)
+        if result_1[-n:] in result_list:#当前消息的hash已存在与前面消息的hash值中，即找到碰撞
             print("找到的两个碰撞：")
-            print("第一个值：", message_list[result_list.index(result_1[-n:])])
-            print("第一个值的sm3加密的结果：", encrypt_fun(message_list[result_list.index(result_1[-n:])]))
-            print("第二个值：", str_1)
-            print("第二个值的sm3加密的结果：", encrypt_fun(str_1))
+            print("第一个值：",message_list[result_list.index(result_1[-n:])])
+            print("第一个值的sm3加密的结果：",encrypt_fun(message_list[result_list.index(result_1[-n:])]))
+            print("第二个值：",str_1)
+            print("第二个值的sm3加密的结果：",encrypt_fun(str_1))
             flag=1
             break
         else:
