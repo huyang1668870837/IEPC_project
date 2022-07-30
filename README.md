@@ -1,7 +1,7 @@
 # IEPC_project
   Project of Cyberspace Security Innovation and entrepreneurship practice course
 
-1.个人组队：胡扬   对应的git账户名：huyang1668870837
+1.个人组队：胡扬   对应的git账户名：huyang1668870837\n
 2.
 （1）项目名称：birthday_attack _of_SM3   简介：利用生日攻击完成对SM3的缩短比特数碰撞，如SM3对消息进行hash的碰撞的比特数为16bit，32bit，40bit 完成人：胡扬
 （2）项目名称：the_Rho_method_of_reduced_SM3  简介：利用Rho方法完成对SM3的缩短比特数碰撞，如SM3对消息进行hash的碰撞的比特数为16bit，32bit，40bit完成人：胡扬
