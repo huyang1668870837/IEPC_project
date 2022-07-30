@@ -1,0 +1,31 @@
+1.个人组队：胡扬   对应的git账户名：huyang1668870837
+2.
+（1）项目名称：birthday_attack _of_SM3   简介：利用生日攻击完成对SM3的缩短比特数碰撞，如SM3对消息进行hash的碰撞的比特数为16bit，32bit，40bit 完成人：胡扬
+（2）项目名称：the_Rho_method_of_reduced_SM3  简介：利用Rho方法完成对SM3的缩短比特数碰撞，如SM3对消息进行hash的碰撞的比特数为16bit，32bit，40bit完成人：胡扬
+（3）项目名称：Impl_Merkle _Tree _following _RFC6962  简介：根据RFC6962对Merkle Tree的描述完成对10w个数据的Merkle Tree构建及数据的存在性证明  完成人：胡扬
+（4）项目名称：Impl_PGP_scheme_with_SM2  简介：使用SM2实现PGP的方案  完成人：胡扬
+3.
+完成的项目：
+Project: implement the naïve birthday attack of reduced SM3 
+Project: implement the Rho method of reduced SM3
+Project: Impl Merkle Tree following RFC6962
+Project: Implement a PGP scheme with SM2
+未完成的项目：
+Project: implement length extension attack for SM3, SHA256, etc.
+Project: implement length extension attack for SM3, SHA256, etc
+Project: do your best to optimize SM3 implementation (software)
+Project: Try to Implement this scheme
+Project: report on the application of this deduce technique in Ethereum with ECDSA
+Project: Implement sm2 with RFC6979
+Project: verify the above pitfalls with proof-of-concept code
+Project: Implement the above ECMH scheme
+Project: implement sm2 2P sign with real network communication
+Project: implement sm2 2P decrypt with real network communication
+Project: PoC impl of the scheme, or do implement analysis by Google
+Project: forge a signature to pretend that you are Satoshi
+Project: send a tx on Bitcoin testnet, and parse the tx data down to every bit, better write script yourself
+Project: forge a signature to pretend that you are Satoshi
+Project: research report on MPT
+Project: Find a key with hash value “sdu_cst_20220610” under a message composed of your name followed by your student ID. For example, “San Zhan 202000460001”.
+
+项目中的运行结果在每个文件中的运行结果.doc（每个文中的文件命名可能不太一样）中。
