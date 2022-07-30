@@ -1,0 +1,11 @@
+生日攻击的介绍：
+假设一个哈希函数H有n个可能的输出，H(x)是其中一个特定的输出，如果对H随机取k个输入，则至少有一个输入y使得H(y)=H(x)的概率为0.5时，k有多大?
+解析：
+仅知道H是哈希函数，且输出为n个的情况下，试图使用一定数量的输出涵盖特定输出，推算最小数量
+代码实现：
+通过随机选取一定数量的消息（这里主要以数字为主），然后对其进行遍历SM3处理，然后对比当前的hash值，和已经处理好的hash取后nbit进行对比，
+如有相同的即为找到碰撞。
+参考：
+1.https://blog.csdn.net/weixin_33910460/article/details/85896091
+2.https://blog.csdn.net/qq_42709776/article/details/109559965
+3.https://blog.csdn.net/HuoRunRUn/article/details/98730164
