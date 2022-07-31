@@ -18,7 +18,7 @@ Project: implement the naïve birthday attack of reduced SM3
 
 对应的文件：birthday_attack _of_SM3
 
-运行结果：
+运行结果(40bit的碰撞结果时间较长不建议运行)：
 
 ![图片](https://user-images.githubusercontent.com/76390993/181865684-4b0985f4-ffd4-4836-9acd-658d8f427cf5.png)
 ![图片](https://user-images.githubusercontent.com/76390993/181865726-2dc50291-474f-49f8-bc3c-037f2d31cc02.png)
@@ -28,7 +28,8 @@ Project: implement the Rho method of reduced SM3
 
 对应的文件：the_Rho_method_of_reduced_SM3
 
-运行结果：
+
+运行结果(40bit的碰撞结果时间较长不建议运行)：
 
 ![图片](https://user-images.githubusercontent.com/76390993/181865801-c51012b4-1b73-48b9-9931-67cc7a4a3872.png)
 ![图片](https://user-images.githubusercontent.com/76390993/181865813-32fce975-0e7f-4cdc-a9ab-6a345c33fc78.png)
